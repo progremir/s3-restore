@@ -249,9 +249,12 @@ def download_file(obj):
     os.utime(obj["Key"],(unixtime, unixtime))
 
 def get_key(obj):
+    key = obj["Key"]
     if not args.dest_prefix:
-        return  obj["Key"]
-    return os.path.join(args.dest_prefix, obj["Key"])
+        return key
+    if args.prefix:
+        key = key[len(args.prefix)].lstrip('/')
+    return os.path.join(args.dest_prefix, key)
 
 def s3_copy_object(obj):
     copy_source= {

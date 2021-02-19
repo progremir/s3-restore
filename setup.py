@@ -28,11 +28,19 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from distutils.core import setup
+from setuptools import setup
+from os import path
+
+# read the contents of your README file
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(name='s3-restore',
-      version='0.1',
+      version='0.1.1',
       description='s3-restore, a point in time restore tool for Amazon S3',
+      long_description=long_description,
+      long_description_content_type='text/markdown',
       author='Emir Amanbekov',
       author_email='amanbekoff@gmail.com',
       url='https://github.com/progremir/s3-restore/',
