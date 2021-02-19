@@ -31,7 +31,7 @@
 from distutils.core import setup
 
 setup(name='s3-restore',
-      version='0.9',
+      version='0.1',
       description='s3-restore, a point in time restore tool for Amazon S3',
       author='Emir Amanbekov',
       author_email='amanbekoff@gmail.com',
