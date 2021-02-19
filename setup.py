@@ -2,14 +2,13 @@
 #
 # MIT License
 #
-# s3-pit-restore, a point in time restore tool for Amazon S3
+# s3-restore, a point in time restore tool for Amazon S3
 #
-# Copyright (c) [2020] [Angelo Compagnucci]
+# Copyright (c) [2020] [Emir Amanbekov]
 #
-# Author: Angelo Compagnucci <angelo.compagnucci@gmail.com>
+# Author: Emir Amanbekov <amanbekoff@gmail.com>
 #
-# This software is forked from a unmaintained version of s3-pit-restore
-# released with MIT license from Madisoft S.p.a.
+# This software is forked from angeloc/s3-pit-restore released with MIT license.
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -31,13 +30,13 @@
 
 from distutils.core import setup
 
-setup(name='s3-pit-restore',
+setup(name='s3-restore',
       version='0.9',
-      description='s3-pit-restore, a point in time restore tool for Amazon S3',
-      author='Angelo Compagnucci',
-      author_email='angelo.compagnucci@gmail.com',
-      url='https://github.com/angeloc/s3-pit-restore/',
+      description='s3-restore, a point in time restore tool for Amazon S3',
+      author='Emir Amanbekov',
+      author_email='amanbekoff@gmail.com',
+      url='https://github.com/progremir/s3-restore/',
       keywords = ['amazon', 's3', 'restore', 'point', 'time', 'timestamp'],
-      scripts=['s3-pit-restore'],
-      install_requires=['boto3'],
+      scripts=['s3-restore'],
+      install_requires=['boto3', 'python-dateutil'],
      )

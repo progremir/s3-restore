@@ -2,14 +2,13 @@
 #
 # MIT License
 #
-# s3-pit-restore, a point in time restore tool for Amazon S3
+# s3-restore, a point in time restore tool for Amazon S3
 #
-# Copyright (c) [2020] [Angelo Compagnucci]
+# Copyright (c) [2020] [Emir Amanbekov]
 #
-# Author: Angelo Compagnucci <angelo.compagnucci@gmail.com>
+# Author: Emir Amanbekov <amanbekoff@gmail.com>
 #
-# This software is forked from a unmaintained version of s3-pit-restore
-# released with MIT license from Madisoft S.p.a.
+# This software is forked from angeloc/s3-pit-restore released with MIT license.
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -33,7 +32,6 @@ import os, sys, time, signal, argparse, boto3, botocore, \
         unittest, concurrent.futures, shutil, uuid, time
 from datetime import datetime, timezone
 from dateutil.parser import parse
-from s3transfer.manager import TransferConfig
 
 args = None
 executor = None
