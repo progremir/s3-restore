@@ -253,7 +253,7 @@ def get_key(obj):
     if not args.dest_prefix:
         return key
     if args.prefix:
-        key = key[len(args.prefix)].lstrip('/')
+        key = key[len(args.prefix):].lstrip('/')
     return os.path.join(args.dest_prefix, key)
 
 def s3_copy_object(obj):
