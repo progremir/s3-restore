@@ -1,4 +1,6 @@
 # S3 point in time restore
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fprogremir%2Fs3-restore.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fprogremir%2Fs3-restore?ref=badge_shield)
+
 
 This is the repository for s3-restore, a point in time restore tool
 for Amazon S3.
@@ -145,3 +147,7 @@ s3-restore comes with a testing suite. You can run it with:
 
 ### Run all the test cases:
 	`$ ./s3-restore -b my-bucket -B restore-bucket-s3 -d /tmp/ -P restore-path --test`
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fprogremir%2Fs3-restore.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fprogremir%2Fs3-restore?ref=badge_large)
